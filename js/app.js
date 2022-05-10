@@ -9,7 +9,6 @@ window.onload = () => {
     loader.style.opacity = '0';
   }, 1200);
 } 
-
 // --- BURGER MENU ---
 let icon = document.getElementById("icon");
 let links = document.getElementById("links");
@@ -49,7 +48,6 @@ menus.forEach(menu => {
 
 
 
-
 window.addEventListener('resize', function(){
   if(screen.width > 750){
         contador=0;
@@ -57,8 +55,6 @@ window.addEventListener('resize', function(){
         links.className = ('nav__links isOpen');
       }
     });
-    
-
 // --- CUSTOM CURSOR ---
 const dotCursor = document.querySelector('.dotCursor');
     
@@ -109,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function() {
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-
 // --- BACK TO TOP ---
 const myButton = document.getElementById("myBtn");
 
@@ -134,25 +129,25 @@ function scrollFunction() {
 
 
 // EMAIL JS
-const btn = document.getElementById('button');
+// const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+// document.getElementById('form')
+//  .addEventListener('submit', function(event) {
+//    event.preventDefault();
 
-   btn.value = 'Enviando...';
+//    btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_xnz25fp';
+//    const serviceID = 'default_service';
+//    const templateID = 'template_xnz25fp';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Enviado!';
+//    emailjs.sendForm(serviceID, templateID, this)
+//     .then(() => {
+//       btn.value = 'Enviado!';
       
-    }, (err) => {
-      btn.value = 'Enviar';
-    });
-});
+//     }, (err) => {
+//       btn.value = 'Enviar';
+//     });
+// });
 
 // --- VALIDATION FORMS ---
 const $formulario = document.getElementById('form');
