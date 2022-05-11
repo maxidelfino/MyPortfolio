@@ -149,6 +149,20 @@ function scrollFunction() {
 //     });
 // });
 
+const form = document.querySelector('#form');
+const buttonEmail = document.querySelector('#buttonEmail');
+form.addEventListener('submit',actionSubmit);
+
+function actionSubmit(event) {
+    event.preventDefault();
+    const formulario = new FormData(this);
+    buttonEmail.setAttribute('href', `mailto:maxidelfino1234@hotmail.com?subject=${formulario.get('option')}&body= Nombre: ${formulario.get('name')} 
+    Apellido: ${formulario.get('apellido')} 
+    Email: ${formulario.get('email')}
+    Consulta: ${formulario.get('consulta')}`);
+    buttonEmail.click();
+}
+
 // --- VALIDATION FORMS ---
 const $formulario = document.getElementById('form');
 const $inputs = document.querySelectorAll('#form [required]');

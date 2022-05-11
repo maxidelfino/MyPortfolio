@@ -1,0 +1,12 @@
+<svg id="icon_date" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="Trazado_27" data-name="Trazado 27" d="M0,0H20V20H0Z" fill="none"/>
+  <path id="Trazado_28" data-name="Trazado 28" d="M16,2V5.333" transform="translate(-2.667 -0.333)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_29" data-name="Trazado 29" d="M8,2V5.333" transform="translate(-1.333 -0.333)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_30" data-name="Trazado 30" d="M3,9H18" transform="translate(-0.5 -1.5)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_31" data-name="Trazado 31" d="M16.333,4H4.667A1.666,1.666,0,0,0,3,5.667V16.5a1.666,1.666,0,0,0,1.667,1.667H16.333A1.666,1.666,0,0,0,18,16.5V5.667A1.666,1.666,0,0,0,16.333,4Z" transform="translate(-0.5 -0.667)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_32" data-name="Trazado 32" d="M6.971,12.729a.208.208,0,1,0,.209.208.207.207,0,0,0-.209-.208" transform="translate(-1.127 -2.122)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_33" data-name="Trazado 33" d="M11.971,12.729a.208.208,0,1,0,.209.208.207.207,0,0,0-.209-.208" transform="translate(-1.961 -2.122)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_34" data-name="Trazado 34" d="M16.971,12.729a.208.208,0,1,0,.209.208.207.207,0,0,0-.209-.208" transform="translate(-2.794 -2.122)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_35" data-name="Trazado 35" d="M6.971,16.729a.208.208,0,1,0,.209.208.207.207,0,0,0-.209-.208" transform="translate(-1.127 -2.788)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+  <path id="Trazado_36" data-name="Trazado 36" d="M11.971,16.729a.208.208,0,1,0,.209.208.207.207,0,0,0-.209-.208" transform="translate(-1.961 -2.788)" fill="none" stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+</svg>
