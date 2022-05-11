@@ -33,7 +33,6 @@ header {
   background-size: cover;
   -o-object-fit: cover;
   object-fit: cover;
-  opacity: .8;
 }
 
 body::-webkit-scrollbar {
@@ -2180,22 +2179,43 @@ body::-webkit-scrollbar-track {
 }
 
 .projects__card--one {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.01)), to(black)), url("../../assets/projects/mubiplex_cover.png");
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 60%, black 100%), url("../../assets/projects/mubiplex_cover.png");
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../../assets/projects/mubiplex_cover.png");
-  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../../assets/projects/mubiplex_cover.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.01)), to(black)), url("../assets/projects/projectOrma.png");
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 60%, black 100%), url("../assets/projects/projectOrma.png");
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectOrma.png");
+  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectOrma.png");
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
 }
-
 .projects__card--two {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.01)), to(black)), url("../../assets/projects/curriculum_responsive.png");
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 60%, black 100%), url("../../assets/projects/curriculum_responsive.png");
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../../assets/projects/curriculum_responsive.png");
-  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../../assets/projects/curriculum_responsive.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.01)), to(black)), url("../assets/projects/projectQuality.png");
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 60%, black 100%), url("../assets/projects/projectQuality.png");
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectQuality.png");
+  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectQuality.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+}
+.projects__card--three {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.01)), to(black)), url("../assets/projects/projectSoyJuan.png");
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 60%, black 100%), url("../assets/projects/projectSoyJuan.png");
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectSoyJuan.png");
+  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectSoyJuan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+}
+.projects__card--four {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.01)), to(black)), url("../assets/projects/projectQuality.png");
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 60%, black 100%), url("../assets/projects/projectQuality.png");
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectQuality.png");
+  background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.01) 60%, #000000 100%), url("../assets/projects/projectQuality.png");
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
