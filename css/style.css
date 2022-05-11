@@ -3568,6 +3568,9 @@ body::-webkit-scrollbar-track {
       -ms-user-select: text !important;
           user-select: text !important;
 }
+.contact__info p a {
+  text-decoration: none;
+}
 
 @media screen and (max-width: 1160px) {
   .contact__info p {
