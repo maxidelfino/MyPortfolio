@@ -6,7 +6,6 @@ function copyToClipboard(element) {
     document.execCommand("copy");
     $temp.remove();
 }
-
 // SWTICH DARK MODE BUTTON
 const switchButton = document.getElementById('switch');
 const body = document.querySelector('body');
@@ -17,8 +16,8 @@ switchButton.addEventListener('click',()=>{
 });
 
 // // BACK TO TOP ON RELOAD PAGE
-// history.scrollRestoration = "manual";
+history.scrollRestoration = "manual";
 
-// $(window).on('beforeunload', function(){
-//       $(window).scrollTop(0);
-// });
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
