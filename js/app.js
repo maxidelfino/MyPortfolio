@@ -129,40 +129,24 @@ function scrollFunction() {
 
 
 // EMAIL JS
-// const btn = document.getElementById('button');
+const btn = document.getElementById('button');
 
-// document.getElementById('form')
-//  .addEventListener('submit', function(event) {
-//    event.preventDefault();
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-//    btn.value = 'Enviando...';
+   btn.value = 'Enviando...';
 
-//    const serviceID = 'default_service';
-//    const templateID = 'template_xnz25fp';
+   const serviceID = 'default_service';
+   const templateID = 'template_8s7oxuh';
 
-//    emailjs.sendForm(serviceID, templateID, this)
-//     .then(() => {
-//       btn.value = 'Enviado!';
-      
-//     }, (err) => {
-//       btn.value = 'Enviar';
-//     });
-// });
-
-const form = document.querySelector('#form');
-const buttonEmail = document.querySelector('#buttonEmail');
-form.addEventListener('submit',actionSubmit);
-
-function actionSubmit(event) {
-    event.preventDefault();
-    const formulario = new FormData(this);
-    buttonEmail.setAttribute('href', `mailto:maxidelfino1234@hotmail.com?subject=${formulario.get('option')}&body= Nombre: ${formulario.get('name')} 
-    Apellido: ${formulario.get('apellido')} 
-    Email: ${formulario.get('email')}
-    Consulta: ${formulario.get('consulta')}`);
-    buttonEmail.click();
-}
-
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviado!';
+    }, (err) => {
+      btn.value = 'Enviar';
+    });
+});
 // --- VALIDATION FORMS ---
 const $formulario = document.getElementById('form');
 const $inputs = document.querySelectorAll('#form [required]');

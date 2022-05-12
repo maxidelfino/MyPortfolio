@@ -555,7 +555,6 @@
     </footer>
 <!-- /FOOTER -->
     
-
     <!-- APP SCRIPT -->
     <script src="js/app.js"></script>
     <!-- PAGE SCROLL SLOWED SCRIPT -->
@@ -574,6 +573,20 @@
             targets: 'h2, h1'
         }) 
     </script>
-    
+    <!-- EMAIL JS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('UV6jxCVYKlwvH3GhS')
+    </script>
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4S498G4G68"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4S498G4G68');
+    </script>
 </body>
 </html>
