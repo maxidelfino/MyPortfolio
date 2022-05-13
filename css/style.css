@@ -256,7 +256,7 @@ body::-webkit-scrollbar-track {
 .element-3 {
   position: absolute;
   z-index: 9999;
-  top: 217%;
+  top: 80%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -279,7 +279,7 @@ body::-webkit-scrollbar-track {
 .element-4 {
   position: absolute;
   z-index: 9999;
-  top: 65%;
+  top: 220%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -299,6 +299,28 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.element-5 {
+  position: absolute;
+  z-index: 9999;
+  top: 120%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  left: 0px;
+}
+
+@media screen and (max-width: 980px) {
+  .element-5 {
+    display: none;
+  }
+  .element-5 .reset {
+    display: none;
+  }
+  .element-5 .reset-responsive {
+    display: block !important;
+  }
+}
 .cont {
   background-color: #202022;
   width: 100%;
@@ -3357,11 +3379,10 @@ body::-webkit-scrollbar-track {
 
 .contact__content img {
   width: 262px;
-  height: 91px;
   position: relative;
   display: block;
   top: 0;
-  left: -66px;
+  left: 10px;
 }
 
 @media screen and (max-width: 1160px) {
