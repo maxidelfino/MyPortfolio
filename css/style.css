@@ -2656,6 +2656,11 @@ body::-webkit-scrollbar-track {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
+.tech__zone:hover .react {
+  stroke: #f39c12;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
 
 @-webkit-keyframes rubberBand {
   from {
