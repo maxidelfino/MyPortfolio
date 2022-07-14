@@ -335,7 +335,7 @@
     0% {
       width: 0%; }
     100% {
-      width: 146px;
+      width: 50px;
       background-color: #5956E9; } }
   @keyframes progressBar4 {
     0% {
@@ -1266,7 +1266,11 @@
             background-color: #F6F6F7;
             margin-right: 16px;
             border-radius: 8px;
-            transition: all .5s ease-in-out; }
+            transition: all .5s ease-in-out; 
+          }
+          .box svg {
+            padding: 16px 0 0 16px;
+          }
             @media screen and (max-width: 480px) {
               .content__abilities__wrapper--s-2 .box {
                 width: 310px;
@@ -1349,7 +1353,7 @@
                   .content__abilities__wrapper--s-2 .box .progress .hide-mobile {
                     display: none; } }
             .content__abilities__wrapper--s-2 .box .inside-3 {
-              width: 156px;
+              width: 80px;
               height: 8px;
               border-radius: 4px;
               background-color: transparent;
@@ -1357,7 +1361,7 @@
               animation: progressBar3 1s forwards 1.9s; }
               @media screen and (max-width: 360px) {
                 .content__abilities__wrapper--s-2 .box .inside-3 {
-                  width: 136px !important; }
+                  width: 80px !important; }
                   .content__abilities__wrapper--s-2 .box .inside-3 .restart {
                     display: none; }
                   .content__abilities__wrapper--s-2 .box .inside-3 .restart-mobile {
@@ -1366,7 +1370,7 @@
                     display: none; } }
               @media screen and (max-width: 320px) {
                 .content__abilities__wrapper--s-2 .box .inside-3 {
-                  width: 116px !important; }
+                  width: 80px !important; }
                   .content__abilities__wrapper--s-2 .box .inside-3 .restart {
                     display: none; }
                   .content__abilities__wrapper--s-2 .box .inside-3 .restart-mobile {
