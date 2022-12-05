@@ -256,7 +256,7 @@ body::-webkit-scrollbar-track {
 .element-3 {
   position: absolute;
   z-index: 9999;
-  top: 80%;
+  top: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -279,12 +279,12 @@ body::-webkit-scrollbar-track {
 .element-4 {
   position: absolute;
   z-index: 9999;
-  top: 220%;
+  top: 170%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  left: 0px;
+  left: -220px;
 }
 
 @media screen and (max-width: 980px) {
@@ -307,7 +307,7 @@ body::-webkit-scrollbar-track {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  left: 0px;
+  right: 0px;
 }
 
 @media screen and (max-width: 980px) {
@@ -2548,7 +2548,7 @@ body::-webkit-scrollbar-track {
 .tech__logos-bot {
   display: -ms-grid;
   display: grid;
-      grid-template-columns: repeat(3, 20%);
+      grid-template-columns: repeat(5, 20%);
   gap: 16px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2957,6 +2957,14 @@ body::-webkit-scrollbar-track {
 .courses__year div {
   display: inline-block;
   width: 82px;
+  height: 2px;
+  border-radius: 16px;
+  background-color: #f39c12;
+  margin-bottom: 10px;
+}
+.courses__year .courses__year--incomplete {
+  display: inline-block;
+  width: 100%;
   height: 2px;
   border-radius: 16px;
   background-color: #f39c12;

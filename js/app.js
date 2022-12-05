@@ -8,7 +8,7 @@ window.onload = () => {
     loader.style.visibility = 'hidden';
     loader.style.opacity = '0';
   }, 1200);
-} 
+}
 // --- BURGER MENU ---
 let icon = document.getElementById("icon");
 let links = document.getElementById("links");
@@ -28,7 +28,7 @@ let handleMenuOpen = () => {
     links.classList.remove('isClosed');
     links.classList.add('isOpen');
   } else{
-    links.classList.remove('isOpen');  
+    links.classList.remove('isOpen');
     links.classList.add('isClosed');
   }
   handleBurgerAnimation();
@@ -46,8 +46,6 @@ menus.forEach(menu => {
   menu.addEventListener('click', () => handleMenuOpen());
 });
 
-
-
 window.addEventListener('resize', function(){
   if(screen.width > 750){
         contador=0;
@@ -57,7 +55,7 @@ window.addEventListener('resize', function(){
     });
 // --- CUSTOM CURSOR ---
 const dotCursor = document.querySelector('.dotCursor');
-    
+
 document.addEventListener('mousemove', e => {
   dotCursor.setAttribute("style", "top: "+(e.pageY - -8.5)+"px; left: "+(e.pageX - -2)+"px;")
 });
@@ -79,7 +77,7 @@ function type() {
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
-  } 
+  }
   else {
     cursorSpan.classList.remove("typing");
   	setTimeout(erase, newTextDelay);
@@ -92,7 +90,7 @@ function erase() {
     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
     charIndex--;
     setTimeout(erase, erasingDelay);
-  } 
+  }
   else {
     cursorSpan.classList.remove("typing");
     textArrayIndex++;
@@ -127,7 +125,6 @@ function scrollFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
 // EMAIL JS
 const btn = document.getElementById('button');
 
@@ -135,16 +132,16 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Enviando...';
+   btn.value = 'Sending...';
 
    const serviceID = 'default_service';
    const templateID = 'template_8s7oxuh';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Enviado!';
+      btn.value = 'Send to!';
     }, (err) => {
-      btn.value = 'Enviar';
+      btn.value = 'Send';
     });
 });
 // --- VALIDATION FORMS ---
@@ -169,7 +166,7 @@ const campos = {
 
 const validarFormulario = (e) => {
   switch (e.target.name) {
-    case "name": 
+    case "name":
       if(expresiones.name.test(e.target.value)){
         document.getElementById('name').classList.remove('invalid');
         document.getElementById('name').classList.add('valid');
@@ -178,7 +175,7 @@ const validarFormulario = (e) => {
         document.getElementById('name').classList.remove('valid');
       }
     break;
-    case "number": 
+    case "number":
       if(expresiones.number.test(e.target.value)){
         document.getElementById('number').classList.remove('invalid');
         document.getElementById('number').classList.add('valid');
@@ -187,7 +184,7 @@ const validarFormulario = (e) => {
         document.getElementById('number').classList.remove('valid');
       }
     break;
-    case "email": 
+    case "email":
       if(expresiones.email.test(e.target.value)){
         document.getElementById('email').classList.remove('invalid');
         document.getElementById('email').classList.add('valid');
@@ -196,7 +193,7 @@ const validarFormulario = (e) => {
         document.getElementById('email').classList.remove('valid');
       }
     break;
-    case "subject": 
+    case "subject":
       if(expresiones.subject.test(e.target.value)){
         document.getElementById('subject').classList.remove('invalid');
         document.getElementById('subject').classList.add('valid');
@@ -205,7 +202,7 @@ const validarFormulario = (e) => {
         document.getElementById('subject').classList.remove('valid');
       }
     break;
-    case "message": 
+    case "message":
       if(expresiones.message.test(e.target.value)){
         document.getElementById('message').classList.remove('invalid');
         document.getElementById('message').classList.add('valid');
@@ -224,12 +221,9 @@ $inputs.forEach((input) => {
 
 $formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-
     if(campos.usuario && campos.name && campos.number && campos.email && campos.subject && campos.message ) {
-      
     } else {
       $formulario.reset();
-
       document.getElementById('name').classList.remove('invalid');
       document.getElementById('name').classList.remove('valid');
       document.getElementById('number').classList.remove('invalid');
@@ -241,7 +235,7 @@ $formulario.addEventListener('submit', (e) => {
       document.getElementById('message').classList.remove('invalid');
       document.getElementById('message').classList.remove('valid');
       setTimeout(() => {
-        btn.value = 'Enviar mensaje';
+        btn.value = 'Send message';
       }, 3000);
     }
 });
