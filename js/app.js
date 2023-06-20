@@ -17,6 +17,7 @@ const menu2 = document.querySelector('#menu2');
 const menu3 = document.querySelector('#menu3');
 const menu4 = document.querySelector('#menu4');
 const menu5 = document.querySelector('#menu5');
+const menu6 = document.querySelector('#menu6');
 const burger = document.querySelector('#burger');
 
 var isOpen = false;
