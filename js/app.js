@@ -65,7 +65,7 @@ document.addEventListener('mousemove', e => {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".dotCursor");
 
-const textArray = ["Front-End Developer.  "];
+const textArray = ["Software Developer.  "];
 const typingDelay = 80;
 const erasingDelay = 70;
 const newTextDelay = 2500;
