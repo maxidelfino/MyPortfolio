@@ -4334,14 +4334,6 @@ body::-webkit-scrollbar-track {
   .footer {
     max-width: 480px;
   }
-
-  .footer .reset {
-    display: none;
-  }
-
-  .footer .reset-responsive {
-    display: block !important;
-  }
 }
 
 .footer__wrapper {
@@ -4358,14 +4350,6 @@ body::-webkit-scrollbar-track {
   .footer__wrapper {
     max-width: 980px;
   }
-
-  .footer__wrapper .reset {
-    display: none;
-  }
-
-  .footer__wrapper .reset-responsive {
-    display: block !important;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -4374,14 +4358,6 @@ body::-webkit-scrollbar-track {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .footer__wrapper .reset {
-    display: none;
-  }
-
-  .footer__wrapper .reset-responsive {
-    display: block !important;
   }
 }
 
@@ -4404,14 +4380,6 @@ body::-webkit-scrollbar-track {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
-  .footer__MaxDesing .reset {
-    display: none;
-  }
-
-  .footer__MaxDesing .reset-responsive {
-    display: block !important;
-  }
 }
 
 .footer__MaxDesing h3 {
@@ -4432,14 +4400,6 @@ body::-webkit-scrollbar-track {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-
-  .footer__MaxDesing h3 .reset {
-    display: none;
-  }
-
-  .footer__MaxDesing h3 .reset-responsive {
-    display: block !important;
   }
 }
 
@@ -4465,14 +4425,6 @@ body::-webkit-scrollbar-track {
     align-items: center;
     margin-left: 0;
   }
-
-  .footer__MaxDesing p .reset {
-    display: none;
-  }
-
-  .footer__MaxDesing p .reset-responsive {
-    display: block !important;
-  }
 }
 
 .footer__social {
@@ -4493,14 +4445,6 @@ body::-webkit-scrollbar-track {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-
-  .footer__social ul .reset {
-    display: none;
-  }
-
-  .footer__social ul .reset-responsive {
-    display: block !important;
   }
 }
 
@@ -4616,14 +4560,6 @@ label {
   appearance: none;
 }
 
-/* Reseteamos las tablas */
-table,
-tr,
-td {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
@@ -4637,13 +4573,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.reset {
-  display: block;
-}
-
-.resertM {
-  display: none;
-}
-
-/*# sourceMappingURL=style.css.map */
