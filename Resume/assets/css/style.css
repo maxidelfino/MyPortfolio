@@ -391,13 +391,14 @@ body.darkmode .btn-float {
   animation-duration: 1s;
 }
 
+/* ## PROGRESS BAR ## */
 @keyframes progressBar {
   0% {
     width: 0%;
   }
 
   100% {
-    width: 218px;
+    width: 90px;
     background-color: #5956E9;
   }
 }
@@ -408,7 +409,7 @@ body.darkmode .btn-float {
   }
 
   100% {
-    width: 120px;
+    width: 160px;
     background-color: #5956E9;
   }
 }
