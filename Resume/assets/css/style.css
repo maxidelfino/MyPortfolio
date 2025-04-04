@@ -2142,7 +2142,7 @@ body.darkmode .btn-float {
 
 .content__extra {
   width: 608px;
-  margin: 32px auto;
+  margin: 0 auto 32px auto;
   display: flex;
   justify-content: space-between;
 }
