@@ -127,24 +127,71 @@ function scrollFunction() {
 }
 
 // EMAIL JS
-const btn = document.getElementById('button');
+(function () {
+  // referencias seguras
+  const form = document.getElementById('form');
+  const btn = document.getElementById('button');
+  const timeInput = document.getElementById('time');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+  if (!form) {
+    console.warn('No se encontró #form en la página. EmailJS no se inicializará.');
+    return;
+  }
+  if (!btn) {
+    console.warn('No se encontró #button en la página. Se creará un botón virtual para evitar errores.');
+  }
 
-   btn.value = 'Sending...';
+  // helper seguro para setear UI del botón (si btn no existe, evita errores)
+  function setButtonState({ text = 'Send message', disabled = false } = {}) {
+    if (btn) {
+      btn.value = text;
+      btn.disabled = !!disabled;
+    } else {
+      // si no hay botón, logueamos
+      console.log(`[button] ${text} (disabled=${disabled})`);
+    }
+  }
 
-   const serviceID = 'default_service';
-   const templateID = 'template_8s7oxuh';
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send to!';
-    }, (err) => {
-      btn.value = 'Send';
-    });
-});
+    // setear timestamp (zona horaria del usuario / Cordoba)
+    try {
+      const now = new Date();
+      // formato legible, hora en America/Argentina/Cordoba (si el navegador lo soporta)
+      // Si Intl no soporta la zona, toLocaleString usa la zona local del sistema.
+      timeInput && (timeInput.value = now.toLocaleString('es-AR', { timeZone: 'America/Argentina/Cordoba' }));
+    } catch (e) {
+      // fallback simple ISO
+      timeInput && (timeInput.value = new Date().toISOString());
+    }
+
+    // UI
+    setButtonState({ text: 'Sending...', disabled: true });
+
+    const serviceID = 'default_service';
+    const templateID = 'template_av5msgk';
+
+    // comprueba que emailjs esté disponible
+    if (typeof emailjs === 'undefined' || !emailjs.sendForm) {
+      console.error('EmailJS no está cargado o la versión es incorrecta.');
+      setButtonState({ text: 'Send message', disabled: false });
+      return;
+    }
+
+    // envía el formulario
+    emailjs.sendForm(serviceID, templateID, this)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setButtonState({ text: 'Sent!', disabled: false });
+        this.reset();
+      })
+      .catch((err) => {
+        console.error('EmailJS error:', err);
+        setButtonState({ text: 'Send message', disabled: false });
+      });
+  });
+})();
 // --- VALIDATION FORMS ---
 const $formulario = document.getElementById('form');
 const $inputs = document.querySelectorAll('#form [required]');
